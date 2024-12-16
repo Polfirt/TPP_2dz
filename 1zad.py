@@ -22,7 +22,6 @@ class Calculator(QWidget):
         # Создание сеточного макета для кнопок
         grid_layout = QGridLayout()
 
-        # Список цифр и операций
         buttons = [
             ('7', 0, 0), ('8', 0, 1), ('9', 0, 2), ('/', 0, 3),
             ('4', 1, 0), ('5', 1, 1), ('6', 1, 2), ('*', 1, 3),
@@ -30,7 +29,6 @@ class Calculator(QWidget):
             ('0', 3, 0), ('C', 3, 1), ('=', 3, 2), ('+', 3, 3)
         ]
 
-        # Создание кнопок в цикле
         for (text, row, col) in buttons:
             button = QPushButton(text)
             button.setFixedSize(150, 150)
