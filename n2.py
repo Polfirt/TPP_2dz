@@ -15,7 +15,6 @@ class TableApp(QWidget):
 
         self.layout = QVBoxLayout()
 
-        # Создание таблицы
         self.table = QTableWidget(self.rows, self.columns)
         self.layout.addWidget(self.table)
 
